@@ -35,7 +35,7 @@
                     </g>
                 </svg>
             </span>
-            <span class="app-brand-text demo menu-text fw-bolder ms-2">SovaKopi</span>
+            <span class="app-brand-text demo menu-text fw-bolder ms-2">Sova Kopi</span>
         </a>
 
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -47,34 +47,46 @@
 
     <ul class="menu-inner py-1">
         <!-- Dashboard -->
-        <li class="menu-item {{ Request::is('dashboard') ? 'active' : '' }}">
-            <a href="/dashboard" class="menu-link">
+        <li class="menu-item active">
+            <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
             </a>
         </li>
 
         <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Management</span>
+            <span class="menu-header-text">Progress Order</span>
         </li>
-        <li class="menu-item {{ Request::is('dashboard/menu') ? 'active' : '' }}">
-            <a href="/dashboard/menu" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-dish"></i>
-                <div data-i18n="Dish">Menu</div>
+        <li class="menu-item">
+            <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-bell"></i>
+                <div data-i18n="Dish">Menunggu</div>
             </a>
         </li>
-        <li class="menu-item {{ Request::is('dashboard/user') ? 'active' : '' }}">
-            <a href="/dashboard/user" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-user"></i>
-                <div data-i18n="Drinks">User</div>
+        <li class="menu-item">
+            <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-basket"></i>
+                <div data-i18n="Drinks">Sedang Dimasak</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-dish"></i>
+                <div data-i18n="Drinks">Siap Saji</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-receipt"></i>
+                <div data-i18n="Drinks">Pembayaran</div>
             </a>
         </li>
         <!-- Forms & Tables -->
         <li class="menu-header small text-uppercase"><span class="menu-header-text">History</span></li>
         <!-- Tables -->
-        <li class="menu-item {{ Request::is('dashboard/order') ? 'active' : '' }}">
-            <a href="/dashboard/order" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-dish"></i>
+        <li class="menu-item">
+            <a href="tables-basic.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-list-ul"></i>
                 <div data-i18n="Order">Order</div>
             </a>
         </li>
